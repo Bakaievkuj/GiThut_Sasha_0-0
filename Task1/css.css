@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(252, 237, 215);
+}
+
+.wrapper{
+    max-width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+.wrapper > h2{
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+article{
+    color: rgb(179, 155, 110);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.slideRules{
+    background-color: rgb(250, 0, 0);
+    font-size: 30px;
+    padding: 10px 20px;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+
+.slideRules{
+    cursor: pointer;
+}
+
+#rules{
+    padding: 20px;
+    font-size: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    background: rgb(87, 216, 17);
+    color: beige;
+    display: none;
+}
+
+.taskProgress {
+    position: fixed;
+    top: 40vh;
+    left: 1vw;
+    padding: 2.5vh;
+}
+
+.taskProgress p {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.img {
+    width: 65%;
+}
+
+.img img{
+    box-shadow: 0 0 20px black;
+    width: 100%;
+}
+
+.answer {
+    /*background: yellow;*/
+    width: 65%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#inputTask1 {
+    flex-grow: 1;
+    font-size: 35px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#inputTask1:focus {
+    outline: none;
+}
+
+#btnTask1 {
+    flex-grow: 1;
+    font-size: 30px;
+    color: white;
+    background: #991525;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#btnTask1:hover {
+    cursor: pointer;
+}
+
+canvas {
+    width: 20vw;
+    /*max-width: 20vw;*/
+}
+
+#nextTask {
+    position: fixed;
+    right: 2vw;
+    bottom: 45vh;
+    width: 250px;
+    height: 10vh;
+    font-size: 40px;
+    background: #991525;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+
